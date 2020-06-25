@@ -13,13 +13,39 @@ body {
 }
 
 .poppy-image {
-    width: 10%;
+    width: 15%;
     min-width: 150px;
 }
 
 .characters-image {
-    width: 30%;
+    width: 35%;
     min-width: 350px;
+}
+
+.book-nav {
+    background-color: white;
+    opacity: 0.8;
+    padding: 1em;
+    border-radius: 25px;
+    margin: 0 20vw 1em;
+}
+
+.book-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.book-nav ul > li {
+    cursor: pointer;
+}
+
+.book-nav-selected {
+    color: #63A6E1;
 }
 
 .book-content {
@@ -32,4 +58,27 @@ body {
     -webkit-box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 4px -4px rgba(0,0,0,0.75);
+}
+
+/* This is the style for showing which page (each page is a div (i.e. <div id="page#">...</div>) ) */
+.book-content > div {
+    display: none;
+}
+
+.book-content > div.page-selected {
+    display: block;
+}
+
+.nav-arrows {
+    margin-top: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-arrows > * {
+    margin-right: 1em;
+}
+
+#nav-back, #nav-forward {
+    cursor: pointer;
 }
