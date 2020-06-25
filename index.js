@@ -1,7 +1,6 @@
 const handleNav = () => {
-    $(".poppy-image").fadeIn("slow", function() {});
+    $(".poppy-image").fadeIn(1200, function() {});
     $(".top-nav-hamburger").click(function() {
-        console.log("clicked");
         $(".top-nav ul").slideToggle("slow", function() {});
     })
 };

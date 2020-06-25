@@ -59,7 +59,7 @@ h1.chapter-header {
 }
 
 .top-nav-header {
-    margin: 0;
+    margin: 0 0 0 44%;
 }
 .top-nav ul {
     display: flex;
@@ -70,7 +70,12 @@ h1.chapter-header {
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1160px) {
+    .top-nav-header {
+        margin: 0 0 0 41%;
+    }
+}
+@media screen and (max-width: 780px) {
     .top-nav {
         justify-content: space-between;
     }
@@ -85,13 +90,18 @@ h1.chapter-header {
         width: 100%;
         z-index: 1;
     }
+    .top-nav-header {
+        margin: 0 0 0 40%;
+    }
+
 }
+
 
 .top-nav-hamburger {
     display: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 780px) {
     .top-nav-hamburger {
         display: block;
     }
