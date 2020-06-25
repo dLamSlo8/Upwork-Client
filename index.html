@@ -16,18 +16,24 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
     </head>	
     <body>
-        <img src="static/Attachment_1592667917.jpeg" class="poppy-image center animate__animated animate__fadeIn" alt="Poppy">
-            
-        <h1 style="text-align: center;"> Hello Poppy Kidz</h1><br>
-
-        <div class="book-nav ">
-            <ul id="nav">
+        <nav class="top-nav">
+            <ul class="top-nav-buttons">
                 <li class="book-nav-selected">Page 1</li>
-                <li>Page 2</li>
-                <li>Page 3</li>
-                <li>Page 4</li>
+                <li><a href="./page2.html">Page 2</a></li>
+                <li><a href="./page3.html">Page 3</a></li>
+                <li><a href="./page4.html">Page 4</a></li>
             </ul>
+
+            <img src="./static/menu-24px.svg" alt="Hamburger menu" class="top-nav-hamburger">
+        </nav>
+        <img src="static/Attachment_1592667917.jpeg" class="poppy-image center animate__animated animate__fadeIn" alt="Poppy">
+        <h1 style="text-align: center;"> Hello Poppy Kidz</h1>
+        <div class="animate__animated animate__fadeIn">
+            <h1 style="text-align: center;"> Chapter 1</h1>
+            <hr class="chapter-line">
         </div>
+
+        <img src="static/Cartoon2.webp" class="characters-image center animate__animated animate__fadeIn" alt="my characters">
 
         <div class="book-content">
             <div id="page1" class="page-selected">
@@ -68,29 +74,13 @@
                 “There you go Joe, how many legs are on that table?”
                 </p>
             </div>
-            <div id="page2">
-                <p>Paragraph 1</p>
-                <p>Paragraph 2</p>
-                <p>Paragraph 3</p>
-            </div>
-            <div id="page3">
-                <p>Paragraph 1</p>
-                <p>Paragraph 2</p>
-                <p>Paragraph 3</p>
-            </div>
-            <div id="page4">
-                <p>Paragraph 1</p>
-                <p>Paragraph 2</p>
-                <p>Paragraph 3</p>
-            </div>
             <div class="nav-arrows" style="display: flex;">
                 <img id="nav-back" src="./static/arrow_back-24px.svg" alt="">
                 <span id="nav-page">Page 1</span>
-                <img id="nav-forward" src="./static/arrow_forward-24px.svg" alt="">
+                <a href="./page2.html"><img id="nav-forward" src="./static/arrow_forward-24px.svg" alt=""></a>
             </div>
         </div>
         <br>
-        <img src="static/Cartoon2.webp" class="characters-image center animate__animated animate__fadeIn" alt="my characters">
 
     </body>
 </html>
