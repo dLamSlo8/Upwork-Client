@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+  }
+  .style{
+    text-align: center;
+    color:  #13ead7;
+  }
+  
+  .nav-list{
+    height: 10vh;
+    display:flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none
+    
+  }
+  
+  .nav-links{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    
+    
+  }
+  

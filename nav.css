@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+body {
+    font-family: "Quicksand", sans-serif;
+
+}
+.top-nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0E85BA;
+    padding: 1em;
+}
+
+.nav-buttons {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+
+.nav-buttons > li {
+    margin-right: 1em;
+}
+
+.nav-buttons > li a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.nav-buttons > li:last-child {
+    margin-right: 0;
+}
+
+
+ul.nav-buttons > li.book-nav-selected {
+    text-decoration: none;
+}
+
+.material-icons.top-nav-hamburger { 
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .nav-buttons {
+        display: none;
+    }
+    .material-icons.top-nav-hamburger {
+        display: block;
+    }
+}
+
+.side-nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20em;
+    max-width: 80%;
+    transform: translateX(30em);
+    transition: transform 0.5s ease-out;
+    padding: 1em;
+    background-color: #679AF2;
+    margin: 0;
+    z-index: 100;
+
+}
+
+.side-nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5em;
+}
+
+.side-nav > ul > li {
+    padding-bottom: 1em;
+    margin-bottom: 0.5em;
+    color: white;
+    border-bottom: 0.5px solid white;
+}
+
+.top-nav-hamburger:hover, .side-nav-close:hover {
+    cursor: pointer;
+}
+
+.side-nav.open {
+    transform: translateX(0em);
+}
+
+.side-nav > ul > li > a {
+    color: white;
+    text-decoration: underline;
+}
+
+body .side-nav > ul > li.book-nav-selected {
+    text-decoration: none;
+}
